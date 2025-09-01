@@ -5,8 +5,9 @@
 </p>
 
 ### Overview
-![alt text](doc/overview.png)
-
+<p align="center">
+  <img src="doc/overview.png" alt="alt text" />
+</p>
 Widgets in Flutter are mainly of two types:
 
 1. **StatelessWidget** – immutable, no lifecycle beyond build.
@@ -114,7 +115,7 @@ dispose()
 
 Minh họa: 
 
-![alt text](image.png)
+![alt text](doc/image.png)
 
 **Một số vấn đề cần chú ý:** 
 - Không thể sử dụng BuildContext để truy cập các thuộc tính từ InheritedWidget trong phương thức initState().
