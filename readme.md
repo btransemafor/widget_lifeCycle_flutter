@@ -1,5 +1,8 @@
 
 # **Widget Lifecycle in Flutter**
+![alt text](doc/flutter.png)
+### Overview
+![alt text](doc/overview.png)
 
 Widgets in Flutter are mainly of two types:
 
@@ -115,7 +118,7 @@ Minh họa:
 
 ```Trong initState(), context chưa được "gắn" với widget tree đầy đủ, nên việc gọi context.dependOnInheritedWidgetOfExactType() sẽ gây lỗi hoặc trả về null. Nếu cần truy cập InheritedWidget, nên làm điều đó trong didChangeDependencies().```
 
-![alt text](image-1.png)
+![alt text](doc/image-1.png)
 
 ``MediaQuery failed: dependOnInheritedWidgetOfExactType<MediaQuery>() or dependOnInheritedElement() was called before _LifecycleDemoState.initState() completed.
 When an inherited widget changes, for example if the value of Theme.of() changes, its dependent widgets are rebuilt. If the dependent widget's reference to the inherited widget is in a constructor or an initState() method, then the rebuilt dependent widget will not reflect the changes in the inherited widget.
@@ -131,13 +134,13 @@ Vậy làm sao InheritedWidget biết được những thằng nào đang phụ 
 
 --> mà sự đăng ký này chỉ được thực hiện sau khi initState completed.
 
-![alt text](image-2.png)
+![alt text](doc/image-2.png)
 
 
 **Solution:**
 
-![alt text](image-3.png)
+![alt text](doc/image-3.png)
 
 Thứ tự xuất hiện của nó lúc này thế nào trong widget lifeCycle 
 
-![alt text](image-4.png)
+![alt text](doc/image-4.png)
