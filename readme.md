@@ -1,6 +1,9 @@
 
 # **Widget Lifecycle in Flutter**
-![alt text](doc/flutter.png)
+<p align="center">
+  <img src="doc/flutter.png" alt="alt text" />
+</p>
+
 ### Overview
 ![alt text](doc/overview.png)
 
